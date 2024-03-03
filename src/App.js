@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+const person ={
+  name: 'Gregorio zara',
+  theme:{
+    backgroundColor: 'black',
+    color: 'pink'
+  }
+};
 
-function App() {
+export default function TodoList(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={person.theme}>
+      <h1>{person.name} TODOS</h1>
+      <img className="avartar"
+      src="https://i.imgur.com/7vQD0fPs.jpg"
+      alt="Gregorio zara"
+      />
+      <ul>
+        <li>Improve the videophone</li>
+        <li>Prepare aeronautics lectures</li>
+        <li>work on the alcohol-fuelled engine</li>
+      </ul>
     </div>
   );
 }
-
-export default App;
